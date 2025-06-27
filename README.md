@@ -15,7 +15,7 @@ A modern, responsive developer portfolio featuring:
 - Telegram-integrated contact form
 - Resume download button
 
-[🔗 Live Preview](https://your-username.github.io/portfolio/) 
+[🔗 Live Preview](https://utkarsh-webdev.github.io/Portfolio-UK/) 
 
 ---
 
@@ -26,7 +26,8 @@ A clean and interactive calculator with:
 - Backspace and error handling
 - Responsive design
 
-[🔗 Live Preview](https://your-username.github.io/calculator/)
+[🔗 Live Preview](https://utkarsh-webdev.github.io/Calculator/)
+
 ---
 
 ### ✅ Task 3: Landing Page
@@ -36,7 +37,7 @@ A visually rich, fully responsive landing page including:
 - Footer with social links
 - Image support and section layout
 
-[🔗 Live Preview](https://your-username.github.io/landing-page/)
+[🔗 Live Preview](https://utkarsh-webdev.github.io/landing-page/)
 
 ---
 
