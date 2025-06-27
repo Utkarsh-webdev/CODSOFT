@@ -1,0 +1,343 @@
+/* ---------------------- Base Reset ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FDFDFD;
+  color: #030303;
+  line-height: 1.6;
+}
+
+
+/* ---------------------- Header ---------------------- */
+header {
+  background-color: #030303;
+  color: #FDFDFD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FCA311;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #FDFDFD;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FCA311;
+}
+
+.auth-buttons a {
+  margin-left: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #FDFDFD;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .register {
+  background-color: #FCA311;
+  color: #030303;
+}
+
+
+/* ---------------------- Hero Section ---------------------- */
+.hero {
+  background: url('./assest/background.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FDFDFD;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #FCA311;
+  color: #030303;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #010711;
+  color: #FDFDFD;
+}
+
+
+/* ---------------------- Section Highlight ---------------------- */
+.section-highlight {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  background-color: #FDFDFD;
+  color: #030303;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-highlight img {
+  border-radius: 30px;
+  box-shadow: 15px 15px blanchedalmond;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+  padding-left: 2rem;
+}
+
+.text-content h2 {
+  color: #13213C;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.text-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+
+/* ---------------------- Gallery Section ---------------------- */
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #FDFDFD;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #030303;
+  margin-bottom: 2.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+/* ---------------------- Contact Section ---------------------- */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #FDFDFD;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+}
+
+.contact-info h2 {
+  color: #13213C;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul li {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  list-style: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #FCA311;
+  color: #030303;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #010711;
+  color: #FDFDFD;
+}
+
+
+/* ---------------------- Footer ---------------------- */
+footer {
+  background-color: #030303;
+  color: #FDFDFD;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+/* ---------------------- Responsive ---------------------- */
+@media (max-width: 768px) {
+  header,
+  nav,
+  .auth-buttons,
+  .hero,
+  .section-highlight,
+  .gallery,
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .auth-buttons a {
+    margin: 0.5rem 0;
+  }
+
+  .text-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-highlight {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
